@@ -15,5 +15,9 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'portfolio',
+    loadComponent: () => import('./portfolio/portfolio.page').then( m => m.PortfolioPage)
+  },
 ];
 
